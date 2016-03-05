@@ -1,4 +1,4 @@
-<?php if (!defined("IN_WALLET")) { die("u can't touch this."); } ?>
+<?php if (!defined("IN_WALLET")) { die("Auth Error!"); } ?>
 <?php
 class Client {
 	private $uri;
@@ -14,6 +14,11 @@ class Client {
 	{
 		return $this->jsonrpc->getbalance("zelles(" . $user_session . ")", 6);
 		//return 21;
+	}
+
+       function getAddress($user_session)
+        {
+                return $this->jsonrpc->getaccountaddress("zelles(" . $user_session . ")");
 	}
 
 	function getAddressList($user_session)

@@ -1,9 +1,9 @@
-<?php if (!defined("IN_WALLET")) { die("u can't touch this."); } ?>
+<?php if (!defined("IN_WALLET")) { die("Auth Error!."); } ?>
 <?php //PLEASE DO NOT REMOVE OR CHANGE THE POWERED BY LINK. THIS IS THE ONLY RECOGNITION I ASK FOR ?>
             </div>
         </div>
 
     </body>
-<b><center><p>Powered by <a href="http://github.com/piWallet/piWallet">piWallet</a></p>
+<b><center><p>Powered by <a href="http://github.com/johnathanmartin/piWallet">piWallet</a></p>
 </center></b>
 </html>
